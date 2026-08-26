@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<body>
+    <img src="../icon/logonature.png" alt="logo" width="200px"> <br>
+    <a href="../index.html">home</a>
+    <br>
+    <hr>
+    <h2>FORMULÁRIO DE CADASTRO DE USUÁRIO</h2>
+    <form name="cad_user" action="bd/senhas.html" method="post">
+        <label>Informe seu nome:<input type="text" name="n" id="n" /></label> <br><br>
+        <label for="nome">Informe seu sobrenome:</label>
+        <input type="text" name="nome" id="nome" /> <br><br>
+
+        <label for="senha">Informe sua senha: </label>
+        <input type="password" name="senha" id="senha" required> <br><br>
+
+        <label for="email">Informe seu e-mail:</label>
+        <input type="email" name="email" id="email" placeholder="exemplo@mail.com"> <br> <br>
+
+        <label for="data">Informe a data de nascimento:</label>
+        <input type="date" name="data" id="data"> <br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr> <br>
+    <table bgcolor="blue">
+        <tr>
+            <th colspan="4">
+                <h3>Solicitação de Cancelamento</h3>
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+                <table border="none" bgcolor="white">
+                    <tr>
+                        <td>Domínio</td>
+                        <th>seudomínio.com</th>
+                    </tr>
+                    <tr>
+                        <td><label for="responsavel"> Pessoa responsável por <br> esta solicitação:</label> </td>
+                        <td><input type="text" name="responsavel" id="responsavel"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="rg"> RG número: </label></td>
+                        <td><input type="text" name="rg" id="rg"></td>
+                    </tr>
+                    <tr>
+                        <td>Expedido por: </td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail para contato: </td>
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Telefone para contato: </td>
+                        <td><input type="tel" name="telefone" id="telefone"></td>
+                    </tr>
+                    <tr>
+                        <td>Motivo do cancelamento</td>
+                        <td><input type="text" name="motivo" id="motivo"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td colspan="2"><input type="submit" value="Enviar dados"></td>
+                
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>
