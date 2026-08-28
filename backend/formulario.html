@@ -44,17 +44,16 @@
         <label for="hibrida">Hibrida</label><br><br>
 
         <b>Selecione seu Estado: </b>
-        <select name="estado">
+        <select name="estado" required>
+            <option value="" desable selected>selecione uma opção</option>
             <option value="PE">PERNAMBUCO</option>
             <option value="BA">BAHIA</option>
             <option value="PB">PARAÍBA</option>
             <option value="PA">PARÁ</option>
         </select> <br>
 
-        <b>OBSERVAÇÃO</b>
-        <textarea rows="10" cols="30" maxlength="150">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse molestiae minima fugit aperiam assumenda earum, maxime ad, obcaecati beatae quos culpa. Excepturi repellendus a explicabo, blanditiis temporibus eos dolores placeat.
-        </textarea> <br><br>
+        <b>OBSERVAÇÃO</b><br>
+        <textarea placeholder="Lorem ipsum dolor, sit amet ..." rows="10" cols="30" maxlength="150"></textarea> <br><br>
         <input type="reset" value="Limpar">
         <input type="submit" value="Enviar">
 
@@ -71,7 +70,7 @@
                 <table style="border: none;" >
                     <tr>
                         <th colspan="4">
-                        <h3 color="white">Solicitação de Cancelamento</h3>
+                        <h3 style="color:#ffffff">Solicitação de Cancelamento</h3>
                         </th>
                         <th></th>
                         <th></th>
