@@ -16,18 +16,48 @@
     <form name="cad_user" action="bd/senhas.html" method="post">
         <label>Informe seu nome:<input type="text" name="n" id="n" /></label> <br><br>
         <label for="nome">Informe seu sobrenome:</label>
-        <input type="text" name="nome" id="nome" /> <br><br>
+        <input type="text" name="nome" id="nome" maxlength="20"/> <br><br>
 
         <label for="senha">Informe sua senha: </label>
-        <input type="password" name="senha" id="senha" required> <br><br>
+        <input type="password" name="senha" id="senha" required maxlength="8"/> <br><br>
 
         <label for="email">Informe seu e-mail:</label>
         <input type="email" name="email" id="email" placeholder="exemplo@mail.com"> <br> <br>
 
         <label for="data">Informe a data de nascimento:</label>
-        <input type="date" name="data" id="data"> <br><br>
+        <input type="date" name="data" id="data"> <br>
 
+        <p><b>Horário de reunião do time</b></p>
+        <input type="radio" name="reuniao" id="manha" value="manha"/> 
+        <label for="manha">Manhã</label><br>
+        <input type="radio" name="reuniao" id="tarde" value="tarde"/>
+        <label for="tarde">Tarde</label><br>
+        <input type="radio" name="reuniao" id="noite" value="noite" checked/>
+        <label for="noite">Noite</label><br> <br>
+
+        <b>Tipo de Reunião</b> <br><br>
+        <input type="checkbox" name="tipo" id="remoto" value="remoto"/>
+        <label for="remoto">Remoto</label><br>
+        <input type="checkbox" name="tipo" id="presencial" value="presencial" checked/>
+        <label for="presencial">Presencial</label><br>
+        <input type="checkbox" name="tipo" id="hibrida" value="hibrida">
+        <label for="hibrida">Hibrida</label><br><br>
+
+        <b>Selecione seu Estado: </b>
+        <select name="estado">
+            <option value="PE">PERNAMBUCO</option>
+            <option value="BA">BAHIA</option>
+            <option value="PB">PARAÍBA</option>
+            <option value="PA">PARÁ</option>
+        </select> <br>
+
+        <b>OBSERVAÇÃO</b>
+        <textarea rows="10" cols="30" maxlength="150">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse molestiae minima fugit aperiam assumenda earum, maxime ad, obcaecati beatae quos culpa. Excepturi repellendus a explicabo, blanditiis temporibus eos dolores placeat.
+        </textarea> <br><br>
+        <input type="reset" value="Limpar">
         <input type="submit" value="Enviar">
+
     </form>
     <br>
     <hr> <br>
@@ -48,35 +78,35 @@
                         <th></th>
                     </tr>
                     <tr style="background-color:white">
-                        <td>Domínio</td>
+                        <td>&emsp;Domínio</td>
                         <th>seudomínio.com</th>
                     </tr>
                     <tr style="background-color:white">
-                        <td><label for="responsavel"> Pessoa responsável por <br> esta solicitação: </label> </td>
+                        <td><label for="responsavel">&emsp;Pessoa responsável por <br>&emsp;esta solicitação: </label> </td>
                         <td><input type="text" name="responsavel" id="responsavel"></td>
                     </tr>
                     <tr style="background-color:white">
-                        <td><label for="rg"> RG número: </label></td>
+                        <td><label for="rg">&emsp;RG número: </label></td>
                         <td><input type="text" name="rg" id="rg"></td>
                     </tr>
-                    <tr style="background-color:white">
-                        <td>&emsp; Expedido por: </td>
+                    <tr style="background-color:#ffffff">
+                        <td>&emsp;Expedido por: </td>
                         <td><input type="text" name="" id=""></td>
                     </tr>
                     <tr style="background-color:white">
-                        <td>E-mail para contato: </td>
+                        <td>&emsp;E-mail para contato: </td>
                         <td><input type="email" name="email" id="email"></td>
                     </tr>
                     <tr style="background-color:white">
-                        <td>Telefone para contato: </td>
+                        <td>&emsp;Telefone para contato: </td>
                         <td><input type="tel" name="telefone" id="telefone"></td>
                     </tr>
                     <tr style="background-color:white">
-                        <td>Motivo do cancelamento: </td>
+                        <td>&emsp;Motivo do cancelamento: </td>
                         <td><input type="text" name="motivo" id="motivo"></td>
                     </tr>
-                    <tr>  <td></td>                      
-                        <td colspan="2"><input type="submit" value="Enviar dados"></td>                
+                    <tr style="background-color:white">                    
+                        <td colspan="2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="submit" value="Enviar dados"></td>                              
                     </tr>
                 </table>
             </td>
@@ -94,6 +124,8 @@
             <td></td>
         </tr>
     </table>
+
+
 </body>
 
 </html>
