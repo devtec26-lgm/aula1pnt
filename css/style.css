@@ -1,0 +1,25 @@
+:root{
+    --cor1: rgb(56, 109, 2);
+    --cor2: rgb(238, 47, 13);
+    --cor3: rgb(170, 6, 167);
+    --cor4: rgb(34, 7, 123);
+}
+
+h1{
+    color: var(--cor2);
+    font-size: 20px;
+}
+h2{
+    color: var(--cor4);
+}
+p{
+    color: var(--cor1);
+    margin-left: 50px;
+    
+}
+legend{
+    color: var(--cor3);
+}
+body{
+    background-color: rgb(179, 194, 202);
+}
