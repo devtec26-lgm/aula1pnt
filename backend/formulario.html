@@ -13,53 +13,52 @@
     <br>
     <hr>
     <h2>FORMULÁRIO DE CADASTRO DE USUÁRIO</h2>
-    <form name="cad_user" action="bd/senhas.html" method="post">
-        <label>Informe seu nome:<input type="text" name="n" id="n" /></label> <br><br>
-        <label for="nome">Informe seu sobrenome:</label>
-        <input type="text" name="nome" id="nome" maxlength="20"/> <br><br>
 
-        <label for="senha">Informe sua senha: </label>
-        <input type="password" name="senha" id="senha" required maxlength="8"/> <br><br>
+    <div>
+        <form name="cad_user" action="bd/senhas.html" method="post">
+            <label>Informe seu nome:<input type="text" name="n" id="n" /></label> <br><br>
+            <label for="nome">Informe seu sobrenome:</label>
+            <input type="text" name="nome" id="nome" maxlength="20"/> <br><br>
+            <label for="senha">Informe sua senha: </label>
+            <input type="password" name="senha" id="senha" required maxlength="8"/> <br><br>
+            <label for="email">Informe seu e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="exemplo@mail.com"> <br> <br>
+            <label for="data">Informe a data de nascimento:</label>
+            <input type="date" name="data" id="data"> <br>
 
-        <label for="email">Informe seu e-mail:</label>
-        <input type="email" name="email" id="email" placeholder="exemplo@mail.com"> <br> <br>
+            <p><b>Horário de reunião do time</b></p>
+            <input type="radio" name="reuniao" id="manha" value="manha"/>
+            <label for="manha">Manhã</label><br>
+            <input type="radio" name="reuniao" id="tarde" value="tarde"/>
+            <label for="tarde">Tarde</label><br>
+            <input type="radio" name="reuniao" id="noite" value="noite" checked/>
+            <label for="noite">Noite</label><br> <br>
 
-        <label for="data">Informe a data de nascimento:</label>
-        <input type="date" name="data" id="data"> <br>
+            <b>Tipo de Reunião</b> <br><br>
+            <input type="checkbox" name="tipo" id="remoto" value="remoto"/>
+            <label for="remoto">Remoto</label><br>
+            <input type="checkbox" name="tipo" id="presencial" value="presencial" checked/>
+            <label for="presencial">Presencial</label><br>
+            <input type="checkbox" name="tipo" id="hibrida" value="hibrida">
+            <label for="hibrida">Hibrida</label><br><br>
+            
+            <b>Selecione seu Estado: </b>
+            <select name="estado" required>
+                <option value="" desable selected>selecione uma opção</option>
+                <option value="PE">PERNAMBUCO</option>
+                <option value="BA">BAHIA</option>
+                <option value="PB">PARAÍBA</option>
+                <option value="PA">PARÁ</option>
+            </select> <br>
+        
+            <b>OBSERVAÇÃO</b><br>
+            <textarea placeholder="Lorem ipsum dolor, sit amet ..." rows="10" cols="30" maxlength="150"></textarea> <br><br>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 
-        <p><b>Horário de reunião do time</b></p>
-        <input type="radio" name="reuniao" id="manha" value="manha"/> 
-        <label for="manha">Manhã</label><br>
-        <input type="radio" name="reuniao" id="tarde" value="tarde"/>
-        <label for="tarde">Tarde</label><br>
-        <input type="radio" name="reuniao" id="noite" value="noite" checked/>
-        <label for="noite">Noite</label><br> <br>
-
-        <b>Tipo de Reunião</b> <br><br>
-        <input type="checkbox" name="tipo" id="remoto" value="remoto"/>
-        <label for="remoto">Remoto</label><br>
-        <input type="checkbox" name="tipo" id="presencial" value="presencial" checked/>
-        <label for="presencial">Presencial</label><br>
-        <input type="checkbox" name="tipo" id="hibrida" value="hibrida">
-        <label for="hibrida">Hibrida</label><br><br>
-
-        <b>Selecione seu Estado: </b>
-        <select name="estado" required>
-            <option value="" desable selected>selecione uma opção</option>
-            <option value="PE">PERNAMBUCO</option>
-            <option value="BA">BAHIA</option>
-            <option value="PB">PARAÍBA</option>
-            <option value="PA">PARÁ</option>
-        </select> <br>
-
-        <b>OBSERVAÇÃO</b><br>
-        <textarea placeholder="Lorem ipsum dolor, sit amet ..." rows="10" cols="30" maxlength="150"></textarea> <br><br>
-        <input type="reset" value="Limpar">
-        <input type="submit" value="Enviar">
-
-    </form>
-    <br>
-    <hr> <br>
+    <br> <hr> <br>
     <table bgcolor="rgb(90, 120, 200)">
         
         <tr>
@@ -68,14 +67,14 @@
             <td></td>
             <td>
                 <table style="border: none;" >
-                    <tr>
-                        <th colspan="4">
-                        <h3 style="color:#ffffff">Solicitação de Cancelamento</h3>
-                        </th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th colspan="4">
+                                <h3 style="color:#ffffff">Solicitação de Cancelamento</h3>
+                            </th>
+                        </tr>
+                    </thead>                    
+                
                     <tr style="background-color:white">
                         <td>&emsp;Domínio</td>
                         <th>seudomínio.com</th>
