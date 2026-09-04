@@ -20,6 +20,17 @@ p{
 legend{
     color: var(--cor3);
 }
+/*
+body::before{
+    background-color: rgba(179, 194, 202, 50);
+    opacity:  0.6;
+    z-index: -1;
+} */
+
 body{
-    background-color: rgb(179, 194, 202);
+    background-repeat: no-repeat;     
+    background-attachment: scroll;
+    background-size: cover; 
+    background-image: url("../img/dar1930-nature-670513_1280.jpg");
+    
 }
