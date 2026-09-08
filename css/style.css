@@ -1,35 +1,56 @@
 :root{
     --cor1: rgb(56, 109, 2);
     --cor2: rgb(238, 47, 13);
-    --cor3: rgb(170, 6, 167);
+    --cor3: rgb(117, 4, 32);
     --cor4: rgb(34, 7, 123);
 }
 
-h1{
+h1 {
     color: var(--cor2);
-    font-size: 20px;
+    font-size: 25px;
+    text-decoration: overline double;
 }
-h2{
+h2 {
     color: var(--cor4);
 }
-p{
+p {
     color: var(--cor1);
     margin-left: 50px;
     
 }
-legend{
+legend.arquivo {
+    color: rgb(5, 151, 141);
+    text-decoration: underline;
+}
+legend {
     color: var(--cor3);
 }
+
 /*
 body::before{
-    background-color: rgba(179, 194, 202, 50);
     opacity:  0.6;
     z-index: -1;
 } */
 
-body{
+body {
+    background-color: rgb(5, 172, 136);
     background-repeat: no-repeat;     
     background-attachment: scroll;
     background-size: cover; 
-    background-image: url("../img/dar1930-nature-670513_1280.jpg");
+    background-image: url("../img/fundoabstrato.avif");
+}
+ 
+.dir {
+    text-align: justify;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color:rgb(34, 7, 123);
+}
+
+pre.marrom{
+    color: rgb(123, 40, 4);
+    font-size: 2rem;
+}
+a.removeSubli{
+    text-decoration: none;
 }
