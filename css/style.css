@@ -5,6 +5,12 @@
     --cor4: rgb(34, 7, 123);
 }
 
+.italico{
+    font-style: italic;
+    color: black;
+    font-size: 1.5rem;
+}
+
 h1 {
     color: var(--cor2);
     font-size: 25px;
@@ -27,14 +33,13 @@ legend {
     color: var(--cor3);
 }
 
-/*
-body::before{
-    opacity:  0.6;
-    z-index: -1;
-} */
+
+main{
+   background-color: rgba(5, 172, 136, 0.3);
+} 
 
 body {
-    background-color: rgb(5, 172, 136);
+    
     background-repeat: no-repeat;     
     background-attachment: scroll;
     background-size: cover; 
@@ -42,6 +47,7 @@ body {
 }
  
 .dir {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     font-weight: bolder;
     font-size: 1.5rem;
@@ -62,4 +68,10 @@ h3.capti {
 
 h2.identacao{
     text-indent: 100px;
+}
+a.foco:hover{
+    color: orangered;
+}
+a.cor:visited{
+    color: rgb(233, 20, 73);
 }
