@@ -77,6 +77,8 @@ a.cor:visited{
 }
 ul{
     list-style-type: square;
+    text-indent: 10px;
+    list-style-position: inside;
 }
 ol{
     list-style-type: upper-roman;
@@ -85,7 +87,8 @@ ul.disc{
     list-style-type: disc;
 }
 
-table tr td{
-    border:2px solid red;
+table,tr,td{
+    border: 4px solid rgb(51, 7, 197);
     border-collapse: collapse;
 }
+

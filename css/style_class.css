@@ -1,0 +1,24 @@
+a {
+    color: blue;
+}
+
+a.virtuais{
+    color:#ff0000;
+}
+a.estrategia{
+    color: #11cc00;
+}
+
+#bebidas{
+    color: rgb(162, 12, 162);
+}
+span.cor{
+    color: rgb(228, 135, 6);
+}
+#insetos{
+    background: #ffeaea;
+}
+#repteis{
+    background: #fff7dd;
+    text-transform: lowercase;
+}
