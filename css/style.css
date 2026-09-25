@@ -20,9 +20,11 @@ h2 {
     color: var(--cor4);
     text-transform: uppercase;
 }
-p {
+p#financeiro {
+    font-size: 16pt;
     color: var(--cor1);
     margin-left: 50px;
+    text-align: justify;
     
 }
 legend.arquivo {
@@ -32,10 +34,31 @@ legend.arquivo {
 legend {
     color: var(--cor3);
 }
+main a.btn {
+    background: green;
+    border-radius: 15px;
+    font-weight: 400;
+    font-size: 3vh;
+    margin: 3px;
+    color: whitesmoke;
+}
+main a.btn:hover{
+    background: red;
+    color: aqua;
+}
 
+#barraMenu{
+    display:block;
+    padding: auto 10px;
+    flex-direction: row;
+    width: 80%;
+    gap: 15px;
+    
+}
 
 main{
    background-color: rgba(5, 172, 136, 0.3);
+   padding:  5% 10%;
 } 
 
 body {
@@ -56,7 +79,7 @@ body {
 
 pre.marrom{
     color: rgb(123, 40, 4);
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 a.removeSubli{
     text-decoration: none;
@@ -64,12 +87,13 @@ a.removeSubli{
 
 h3.capti {
     text-transform: capitalize;
+    margin-left: 10px;
 }
 
 h2.identacao{
     text-indent: 100px;
 }
-a.foco:hover{
+a:hover{
     color: orangered;
 }
 a.cor:visited{
