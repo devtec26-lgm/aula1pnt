@@ -10,5 +10,5 @@ function acao1() {
     } else {
         resp.innerHTML += "<h1>Igual a 6</h1>";
     }
-
 }
+
