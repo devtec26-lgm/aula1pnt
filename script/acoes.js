@@ -63,13 +63,13 @@ resp.innerHTML += "Chave: "+key+" Valor: "+value+"<br/>";
 });
 }
 function acao7() {
-let entrada = "Bem vindo" + prompt("Informe seu nome: ");
-var saldacao = document.getElementsById('titulo');
-saldacao.textContent = entrada;
-const collection = document.getElementsByName("animal");
-for (let i = 0; i < collection.length; i++){
-if (collection[i].type == "checkbox") {
-collection[i].checked = true;
+    let entrada = "Bem vindo" + prompt("Informe seu nome: ");
+    var saldacao = document.getElementsById('titulo');
+    saldacao.textContent = entrada;
+    const collection = document.getElementsByName("animal");
+    for (let i = 0; i < collection.length; i++){
+        if (collection[i].type == "checkbox") {
+        collection[i].checked = true;
 }
 }
 resp.innerHTML += '<p>clicou no sétimo botão</p>'
@@ -79,11 +79,85 @@ teste[1].textContent = 'Texto do paragrafo identificado por "paragrafo" na posi�
 
 }
 function acao8() {
-resp.innerHTML += '<p>clicou no oitavo botão</p>';
-function calculaArea() {
-let area = 3*5;
-resp.innerHTML += '<h1> Área total: '+area+'</h1>';
-}
-calcularArea();
+    resp.innerHTML += '<p>clicou no oitavo botão</p>';
+    function calcularArea() {
+        let area = 3*5;
+        resp.innerHTML += '<h1> Área total: '+area+'</h1>';
+    }
+    calcularArea();
 }
 
+function acao9() {
+    resp.innerHTML += '<p>Clicou no nono botão</p>'
+    
+    let largura = prompt("Informe a largura");
+    let altura = prompt("Informe a altura");
+
+    function getArea(width, height) {
+        let calculateArea = width * height;
+        return calculateArea;
+    }
+    let area = getArea(largura, altura);
+    resp.innerHTML += '<h1 style="color:green;">Área total: '+ area +'</h1>';
+
+}
+
+function acao10() {
+    resp.innerHTML += '<p>Clicou no décimo botão</p>'
+
+    //Set item
+    let login = ['user', '********'];
+    sessionStorage.setItem("acessoOn", login);
+    //Retrieve
+    document.getElementById("session").innerHTML = sessionStorage.getItem("acessoOn");
+
+}
+
+function acao11() {
+    resp.innerHTML += '<p>clicou no décimo primeiro botão</p>'
+    //Criando um objeto notação literal
+    let hotel = { //o bjeto é declarado comovariavel.
+        nome: 'Por do sol', //as chaves são separada do seu valor por dois pontos. Igual
+        quartos: 40, //separa com virgula cada propriedade e método.
+        reservados: 25,
+        piscina: true,
+        tipoQuarto: ['simples', 'duplo', 'suite'],
+        
+        checkAvailability: function () {
+            return this.quartos - this.reservados; //this = este objeto (objeto atual)
+        }// a palavra chave this indica que ele usa as prpriedades deste objeto.
+
+    };
+
+    let atrNome = document.getElementById('nome');
+    atrNome.textContent = hotel.nome; //Acesando um objeto com a notação de ponto
+    //O ponto é conhecido como: Operador de membro
+    let atrQuartos = document.getElementById('quartos');
+    atrQuartos.textContent = hotel.checkAvailability();
+}
+
+function acao12() {
+    resp.innerHTML += '<p>Clicou no decimo segundo botão</p>'
+
+        //criando obejto notação de construtor
+        let carro =  new Object(); //função do construtor object()
+
+            carro.modelo = 'tracker'; //
+            carro.ano  = 2025;
+            carro.fabricante = 'Chevrolet';
+            carro.kmAtual = 123456;
+            carro.proxTrocaOleo = 1233456;
+
+            carro.checkStatus = function () {
+                return this.proxTrocaOleo - this.kmAtual;
+            };
+        let atrModelo = document.getElementsById('modelo');
+        atrModelo.textContent = carro.modelo; //acessando um objeto com a notação de ponto
+
+        let atrProxTrocaOleo = document.getElementById('oleoMotor');
+        atrProxTrocaOleo.textContent = carro.checkStatus();
+
+        let atrkmAtual = document.getElementById('kmAtual');
+        atrkmAtual.textContent = carro.kmAtual;
+
+}
