@@ -146,7 +146,7 @@ function acao12() {
             carro.ano  = 2025;
             carro.fabricante = 'Chevrolet';
             carro.kmAtual = 123456;
-            carro.proxTrocaOleo = 1233456;
+            carro.proxTrocaOleo = 124336;
 
             carro.checkStatus = function () {
                 return this.proxTrocaOleo - this.kmAtual;
@@ -160,4 +160,37 @@ function acao12() {
         let atrkmAtual = document.getElementById('kmAtual');
         atrkmAtual.textContent = carro.kmAtual;
 
+}
+
+function acao13() {
+    resp.innerHTML += '<p>Clicou no decimo terceiro botão</p>'
+
+    //notação objeto construtor
+    function Mobilia(nome, largura, altura, peso) {//construção do template. nome começa com letra maiuscula
+
+        this.nome = nome; // usamos o this para indicar a propriedade ou metodo que a função criou
+        this.largura = largura;
+        this.altura = altura;
+        this.peso = peso;
+
+        this.checkAreaOcupada = function () {
+            return this.largura * this.altura;
+        }
+
+    }
+//o this se tornautil quando vc estiver criando varios objetos
+//usando um construtor de obejto (e se cada forma tiver dimensões diferentes)
+//this refernciará a instancia individual do novo objeto que vc esta criando
+
+//criando varios varios objetos do tipo  Mobilia, ou criar varios objetos semelhantes
+//forma padrão : var cama = new Mobilia('cama', 3, 4, 2);
+var listaObj = [
+    cadeira = new Mobilia('cadeira', 2, 1.5, 0.5),
+    mesa = new Mobilia('mesa', 3, 2, 1),
+    cama = new Mobilia('cama', 3, 4, 2)
+];
+
+for (var i = 0; i < listaObj.length; i++){
+    
+}
 }
