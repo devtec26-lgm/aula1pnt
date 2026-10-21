@@ -140,7 +140,7 @@ function acao12() {
     resp.innerHTML += '<p>Clicou no decimo segundo botão</p>'
 
         //criando obejto notação de construtor
-        let carro =  new Object(); //função do construtor object()
+        let carro = new Object(); //função do construtor object()
 
             carro.modelo = 'tracker'; //
             carro.ano  = 2025;
@@ -151,7 +151,7 @@ function acao12() {
             carro.checkStatus = function () {
                 return this.proxTrocaOleo - this.kmAtual;
             };
-        let atrModelo = document.getElementsById('modelo');
+        let atrModelo = document.getElementById('modelo');
         atrModelo.textContent = carro.modelo; //acessando um objeto com a notação de ponto
 
         let atrProxTrocaOleo = document.getElementById('oleoMotor');
@@ -176,11 +176,10 @@ function acao13() {
         this.checkAreaOcupada = function () {
             return this.largura * this.altura;
         }
-
     }
-//o this se tornautil quando vc estiver criando varios objetos
+//o this se torna util quando vc estiver criando varios objetos
 //usando um construtor de obejto (e se cada forma tiver dimensões diferentes)
-//this refernciará a instancia individual do novo objeto que vc esta criando
+//this referenciará a instancia individual do novo objeto que vc esta criando
 
 //criando varios varios objetos do tipo  Mobilia, ou criar varios objetos semelhantes
 //forma padrão : var cama = new Mobilia('cama', 3, 4, 2);
@@ -191,6 +190,6 @@ var listaObj = [
 ];
 
 for (var i = 0; i < listaObj.length; i++){
-    
+    document.getElementById('item').innerHTML += 'item : <b>' + listaObj[i].nome + ' </b><br/>' + 'Area Ocupada: <b>' + listaObj[i].checkAreaOcupada() + '</b>' + 'Peso: <b>' + listaObj[i].peso + '</b><br/>';
 }
 }
